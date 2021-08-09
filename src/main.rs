@@ -8,16 +8,16 @@ fn main() {
     let mut ints = vec![9, 5, 6, 7, 1, 3, 4, 6, 7, 1, 3, 5, 6, 7, 3, 6, 7, 2, 4, 6, 7];
     println!("List of integers: {:?}", ints);
     //MEAN
-    let _mean = get_mean(&ints);
-    //println!("MEAN: {}", mean);
+    let mean = get_mean(&ints);
+    println!("MEAN: {}", mean);
 
     //MODE
     let mode = get_mode(&ints);
     println!("MODE: {:?}", mode);
 
     //MEDIAN
-    let _median = get_median(&mut ints);
-    //println!("MEDIAN: {}", median);
+    let median = get_median(&mut ints);
+    println!("MEDIAN: {}", median);
 }
 
 fn get_mean(ints: &Vec<usize>) -> usize {
